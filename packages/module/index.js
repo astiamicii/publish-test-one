@@ -7,7 +7,7 @@ const log2 = () => {
 };
 
 const log3 = () => {
-  console.log('some meaningful stelemassssii.333. 32ssssss12');
+  console.log('some meaningful stelemassssii.333. 32ssssss12222');
 };
 
 const log4 = () => {
