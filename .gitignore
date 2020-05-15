@@ -1,0 +1,8 @@
+node_modules
+
+.vscode
+
+# ignore OS files
+.DS_Store
+
+lerna-debug.log

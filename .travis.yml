@@ -1,0 +1,113 @@
+os: linux
+dist: xenial
+
+git:
+  depth: 10
+
+language: node_js
+# defaulting to .nvmrc specified node version which is lts/* ->  latest LTS Node.js release
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#specifying-nodejs-versions
+# https://github.com/nvm-sh/nvm#nvmrc
+
+cache: npm
+
+# kill all email notification in this repo
+notifications:
+  email: false
+
+before_deploy:
+  # build the docs website
+  - cd packages/docs && npm run build && cd ../..
+  # create .npmrc on runtime -- needed for npm publish
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
+
+deploy:
+  - provider: pages
+    strategy: git
+    token: $GH_TOKEN # Set in the settings page of your repository, as a secure variable
+    local_dir: packages/docs/build
+    verbose: true
+    on:
+      branch: master
+    edge: true # opt in to dpl v2
+  # - provider: npm
+  #   api_token: $NPM_API_KEY
+  #   on:
+  #     tags: true
+  #   edge: true
+####################
+# jobs:
+#   include:
+#     - stage: deploy docs on github pages
+#       script: skip
+#       before_deploy:
+#         - cd packages/docs && npm run build && cd ../..
+#       deploy:
+#         if: branch = master
+#         provider: pages
+#         strategy: git
+#         token: $GH_TOKEN # Set in the settings page of your repository, as a secure variable
+#         local_dir: packages/docs/build
+#         verbose: true
+#         edge: true # opt in to dpl v2
+#     - stage: deploy module to npm
+#       script: skip
+#       before_deploy:
+#         - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
+#       deploy:
+#       provider: script
+#       email: $EMAIL
+#       github_token: $GH_TOKEN
+#       user: $NPM_USER
+#       script: "lerna publish --yes --dist-tag dev --canary --preid dev"
+#       skip_cleanup: true
+
+################
+# keep_history: true
+# skip_cleanup: true
+# - provider: script
+#   email: $EMAIL
+#   github_token: $GH_TOKEN
+#   user: $NPM_USER
+#   script: 'lerna publish --yes  --canary --preid dev --ignore *docs'
+#   skip_cleanup: true
+#npm deploy
+# before_deploy:
+#   - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
+
+# deploy:
+# provider: script
+# email: $EMAIL
+# github_token: $GH_TOKEN
+# user: $NPM_USER
+# script: "lerna publish --yes --dist-tag dev --canary --preid dev"
+# skip_cleanup: true
+# old configs
+#
+# jobs:
+#   include:
+#     - stage: npm release
+#       deploy:
+#         - provider: npm
+#           src: packages/module
+#           email: $EMAIL
+#           api_token: $NPM_API_KEY
+#           access: public
+#           on:
+#             branch: master
+#             repo: astiamicii/npm-publish
+#           tag: alpha
+#           cleanup: true
+
+# script: yarn run lerna:publish
+# before_deploy:
+#   - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
+# deploy:
+#   provider: script
+#   # email: $EMAIL
+#   # api_token: $NPM_API_KEY
+#   script: 'yarn run lerna:publish'
+#   cleanup: true
+#   # on:
+#   #   tags: true
+#   #   repo: astiamicii/npm-publish

@@ -1,0 +1,12 @@
+package.json
+package-lock.json
+yarn.lock
+coverage
+build
+lib
+es
+umd
+dist
+.git
+.next
+.yarn
