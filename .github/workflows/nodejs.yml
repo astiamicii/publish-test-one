@@ -38,4 +38,4 @@ jobs:
           # Set to true for the last action when using "parallel: true".
           # parallel-finished: # optional
           # The root folder of the project that originally ran the tests
-          base-path: ./packages/module# optional
+          base-path: ./packages/module # optional

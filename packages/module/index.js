@@ -12,7 +12,7 @@ const log4 = () => {
 };
 
 const log5 = () => {
-  console.log('some meaningful messssssage33?!..!!45www693@#!');
+  console.log('some meaningful messssssa333ge33?!..!!45www693@#!');
 };
 
 module.exports = {
