@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test": " jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "publishConfig": {
     "access": "public"

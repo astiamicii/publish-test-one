@@ -7,11 +7,12 @@ const log2 = () => {
 };
 
 const log3 = () => {
-  console.log('sful @@@.333. 32ssssss122222222');
+  console.log('sful @@@!!!!.333. 32ssssss122222222');
 };
 
 const log4 = () => {
-  console.log('some meaningful messssssage33?!..!!45www693');
+  console.log('some meaningsdadasful messssssage33?!..!!45www693');
+  console.log('double log');
 };
 
 const log5 = () => {
