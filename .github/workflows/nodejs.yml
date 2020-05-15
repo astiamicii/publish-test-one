@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [10.x, 12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -38,6 +38,6 @@ jobs:
           # Set to true for the last action when using "parallel: true".
           # parallel-finished: # optional
           # Coveralls Enterprise server (more info: https://enterprise.coveralls.io)
-          # coveralls-endpoint: # optional, default is https://coveralls.io
+          coveralls-endpoint: # optional, default is https://coveralls.io
           # The root folder of the project that originally ran the tests
           # base-path: # optional
