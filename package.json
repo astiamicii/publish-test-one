@@ -6,10 +6,10 @@
   "scripts": {
     "test": "lerna run test",
     "postinstall": "lerna bootstrap",
-    "release": "lerna publish --yes --dist-tag latest --create-release github --conventional-commits",
-    "publish:release": "npm run release -- -m 'chore: publish release'",
-    "publish:prerelease": "npm run release -- -m 'chore: publish prerelease' --conventional-prerelease",
-    "publish:graduate": "npm run release -- -m 'chore: graduate prerelease' --conventional-graduate"
+    "lerna:publish": "lerna publish --yes --dist-tag latest --create-release github --conventional-commits",
+    "publish:release": "npm run lerna:publish -- -m 'chore: publish release'",
+    "publish:prerelease": "npm run lerna:publish -- -m 'chore: publish prerelease' --conventional-prerelease",
+    "publish:graduate": "npm run lerna:publish -- -m 'chore: graduate prerelease' --conventional-graduate"
   },
   "repository": {
     "type": "git",
