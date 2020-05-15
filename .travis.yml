@@ -5,6 +5,7 @@ git:
   depth: 10
 
 language: node_js
+
 # defaulting to .nvmrc specified node version which is lts/* ->  latest LTS Node.js release
 # https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#specifying-nodejs-versions
 # https://github.com/nvm-sh/nvm#nvmrc
@@ -19,7 +20,7 @@ before_deploy:
   # build the docs website
   - cd packages/docs && npm run build && cd ../..
   # create .npmrc on runtime -- needed for npm publish
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
+  # - echo "//registry.npmjs.org/:_authToken=\${NPM_API_KEY}" >> $HOME/.npmrc 2> /dev/null
 
 deploy:
   - provider: pages
