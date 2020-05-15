@@ -7,7 +7,7 @@ const log2 = () => {
 };
 
 const log3 = () => {
-  console.log('sful @@@!!!!.333. 32ssssss122222222');
+  console.log('sful @@21231340340@!!!!.333. 32ssssss122222222');
 };
 
 const log4 = () => {
