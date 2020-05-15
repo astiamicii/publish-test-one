@@ -3,7 +3,7 @@ const log = () => {
 };
 
 const log2 = () => {
-  console.log('some meaningful message? 21.');
+  console.log('some meani;wlq;lwqpqpwngful message? 21.');
 };
 
 const log3 = () => {
