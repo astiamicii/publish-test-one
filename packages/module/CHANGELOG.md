@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.13.0...@astiamicii/monorepo-example@1.13.1) (2020-05-15)
+
+
+### Bug Fixes
+
+* peaxu ([ae7346e](https://github.com/astiamicii/monorepo-example/commit/ae7346eebdca6829f77a30dc62f9998d2592a48d))
+
+
+
+
+
 # [1.13.0](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.12.2...@astiamicii/monorepo-example@1.13.0) (2020-05-15)
 
 
