@@ -8,7 +8,7 @@ on:
       - master
     paths:
       - '.github/workflows/gh-pages.yml'
-      - 'website/**'
+      - 'packages/docs/**'
 
 jobs:
   deploy:
@@ -24,8 +24,6 @@ jobs:
         with:
           node-version: '12.x'
 
-      - run: npm install
-      - run: cd packages/docs
       - run: npm run build
 
       - name: Deploy
