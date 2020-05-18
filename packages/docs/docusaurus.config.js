@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'Npm publish',
+  title: 'monorepo-example',
   tagline:
     'Playground for publishing a npm module and deploy its documentation to github pages',
   url: 'https://astiamicii.github.io',
-  baseUrl: '/npm-publish/',
+  baseUrl: '/monorepo-example/',
   favicon: 'img/favicon.ico',
   organizationName: 'astiamicii', // Usually your GitHub org/user name.
-  projectName: 'npm-publish', // Usually your repo name.
+  projectName: 'monorepo-example', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Npm publish',
@@ -76,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copywhat?  ${new Date().getFullYear()} Npm-publish built with Docusaurus.`,
+      copyright: `Copywhat?  ${new Date().getFullYear()} monorepo-example built with Docusaurus.`,
     },
   },
   presets: [
