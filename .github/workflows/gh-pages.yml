@@ -19,9 +19,8 @@ jobs:
       #   with:
       #     hugo-version: '0.68.3'
 
-      - name: Build
-        - run: cd packages/docs
-        - run: npm run build
+      - run: cd packages/docs
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
