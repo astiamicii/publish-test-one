@@ -7,7 +7,6 @@ const log3 = () => {
 };
 
 const log14 = () => {
-  // Something
   // Else
 };
 
