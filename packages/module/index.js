@@ -10,7 +10,6 @@ const log14 = () => {
   // Something
   // Else
   // Ha
-  // Sa
 };
 
 const log4 = () => {

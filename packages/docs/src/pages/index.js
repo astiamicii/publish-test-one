@@ -13,7 +13,7 @@ const features = [
     imageUrl: "img/undraw_docusaurus_mountain.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
+        Docusauruswas designed from the ground up to be easily installed and
         used t get your website up and running quickly.
       </>
     ),
