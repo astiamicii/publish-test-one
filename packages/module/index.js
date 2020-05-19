@@ -1,10 +1,13 @@
 const log = () => 'some meaningful message!';
 
-const log2 = () => 'some meani;wlq;lwqpqpwngful message? 21s.';
+const log2 = () => 'some meani;wlq;lwqpqpwngful message? 21.';
 
 const log3 = () => {
   console.log('sful @@21231340340@!!!!.333. 32ssssss122222222');
 };
+
+const log14 = () => {
+}
 
 const log4 = () => {
   console.log('some meaningsdadasful messssssage33?!..!!45www693');
