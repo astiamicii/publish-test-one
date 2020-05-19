@@ -34,8 +34,17 @@ jobs:
           # Path to lcov file
           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
           # Set to true if you are running parallel jobs, then use "parallel_finished: true" for the last action.
-          # parallel: # optional
+          parallel: true # optional
           # Set to true for the last action when using "parallel: true".
           # parallel-finished: # optional
           # The root folder of the project that originally ran the tests
           base-path: ./packages/module # optional
+finish:
+  needs: build
+  runs-on: ubuntu-latest
+  steps:
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        parallel-finished: true
