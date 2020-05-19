@@ -39,12 +39,12 @@ jobs:
           # parallel-finished: # optional
           # The root folder of the project that originally ran the tests
           base-path: ./packages/module # optional
-finish:
-  needs: build
-  runs-on: ubuntu-latest
-  steps:
-    - name: Coveralls Finished
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        parallel-finished: true
+  finish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
