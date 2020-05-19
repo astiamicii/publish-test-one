@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-alpha.4](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.0.1-alpha.3...@astiamicii/monorepo-example@1.0.1-alpha.4) (2020-05-19)
+
+**Note:** Version bump only for package @astiamicii/monorepo-example
+
+
+
+
+
 ## [1.0.1-alpha.3](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.0.1-alpha.2...@astiamicii/monorepo-example@1.0.1-alpha.3) (2020-05-19)
 
 **Note:** Version bump only for package @astiamicii/monorepo-example
