@@ -4,6 +4,12 @@
   "version": "1.13.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astiamicii/monorepo-example.git",
+    "directory": "packages/monorepo-example"
+  },
+  "homepage": "https://github.com/astiamicii/monorepo-example/module/#readme",
   "scripts": {
     "test": " jest --coverage"
   },
