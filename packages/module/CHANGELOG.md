@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.13.1...@astiamicii/monorepo-example@1.0.1) (2020-05-19)
+
+
+### Reverts
+
+* Revert prerelease. ([19d270b](https://github.com/astiamicii/monorepo-example/commit/19d270b18e465aa3170b65faa3e940aa70eaaaee))
+
+
+
+
+
 ## [1.13.1](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.13.0...@astiamicii/monorepo-example@1.13.1) (2020-05-15)
 
 
